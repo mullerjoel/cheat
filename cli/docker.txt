@@ -31,6 +31,9 @@ docker compose up -d
 # stop deamon docker compose
 docker compose down
 
+# stop deamon docker compose and remove the volumes
+docker compose down -v
+
 # stop deamon docker compose and remove also the images
 docker compose down --rmi all
 
