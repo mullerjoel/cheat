@@ -33,7 +33,10 @@ Could not apply 167d0d5... # K: add favs from favs branch
 git add .
 git rebase --continue
 
-
 # How to Undo the Screw-Up, If you accidentally commit the resolution of a rebase conflict, just:
 git reset --soft HEAD~1
 # The --soft flag will keep your changes, and just undo the commit. Then you can simply --continue the rebase as normal.
+
+# You need to force push if you allready set it to a remote
+git push --force
+git push --force-with-lease

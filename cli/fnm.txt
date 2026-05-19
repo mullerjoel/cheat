@@ -1,0 +1,15 @@
+brew install fnm
+
+# check current version
+node -v
+
+# install a version or the one declared in .node-version
+fnm install 22
+fnm install
+
+# use a version or the one declared in .node-version
+fnm use 22
+fnm use
+
+# list all versions
+fnm list
