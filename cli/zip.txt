@@ -1,0 +1,2 @@
+# zip a directory
+zip -r files.zip files
