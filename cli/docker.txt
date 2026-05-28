@@ -39,3 +39,9 @@ docker compose down --rmi all
 
 # port mapping
 docker run -p <host_port>:<container_port> image_name
+
+# stop and kill all docker container
+docker stop $(docker ps -aq)
+
+# removes all containers, images, networks, caches, and volumes not currently in use
+docker system prune -a --volumes
