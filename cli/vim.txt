@@ -7,6 +7,8 @@ https://vim.rtorr.com
 :s/old/new/g                   - Replace all matches on line.
 :#,#s/old/new/g                - Replace matches between two lines with the number #
 
+Good Cheatsheet: https://vim.rtorr.com
+
 # basic vim commands
 h, j, k, l                     - Move cursor: left, down, up, right (alternatively, use arrow keys).
 vim FILENAME                   - Start Vim with the specified file.
