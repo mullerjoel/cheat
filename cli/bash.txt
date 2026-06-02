@@ -30,3 +30,55 @@ $var or ${var}               - Call a variable.
 ||                   - Run next command only if the first failed
 |                    - Pipe output from one command to another (e.g., cat file | wc -l)
 $(...)               - Command substitution: run a command within another (e.g., mv hello.txt $(date +%s)_hello.txt)
+
+# expansions (also called globbing)
+*                 - Matches any number of characters.
+?                 - Matches exactly one character.
+[abc]             - Matches exactly one character within the brackets.
+????              - Matches exactly four characters.
+?????             - Matches exactly five characters.
+~                 - Expands to the current user's home directory.
+~username         - Expands to the specified user's home directory.
+{x,y,z}           - Generates all combinations of the listed options.
+{start..end}      - Generates a sequence of numbers or letters.
+{start..end}{x,y} - Combines sequence and list expansion.
+[!abc] or [^abc]  - Matches any character NOT listed within the brackets.
+[[:alpha:]]       - Matches any alphabetic character.
+[[:lower:]]       - Matches any lowercase character.
+[[:upper:]]       - Matches any uppercase character.
+[[:alnum:]]       - Matches any alphanumeric character (letters or digits).
+[[:punct:]]       - Matches any printable punctuation character (no spaces or alphanumerics).
+[[:digit:]]       - Matches any digit from 0 to 9.
+[[:space:]]       - Matches any whitespace character (tab, newline, carriage return, form feed, or space).
+
+
+# Shortcuts Shell
+STRG-U                               Alle Zeichen loschen
+STRG-K                               Alle Zeichen rechts vom Cursor loschen
+STRG-H / RUCKTASTE / LOSCHEN (MACOS) Ein Zeichen nach links loschen
+STRG-D / ENTF / FN ENTF (MACOS)      Ein Zeichen nach rechts l6schen
+STRG-A                               An den Anfang der Zeile springen
+STRG-E                               Ans Ende der Zeile springen
+STRG-Pfeil links                     Ein Wort nach links springen
+STRG-Pfeil rechts                    Ein Wort nach rechts springen
+STRG-W                               Wort links vom Cursor löschen
+STRG-R                               BASH-History durchsuchen
+STRG-L, clear                        Terminal leer machen
+
+# Dateideskriptoren
+0                stdin               Eingabe zum Prozess (z.B. Tastatur)
+1                stdout              Normale Ausgabe (z.B. Informationen auf die Konsole)
+2                stderr              Ausgabe von Fehlern (z.B. auf die Konsole)
+3, 4, 5, ...     <filename>          Andere Dateien zum Lesen oder Schreiben
+
+# Anwendung Dateideskriptoren
+> file                      Umleitung stdout in Datei; Datei wird überschrieben
+1> file                     Umleitung stdout in Datei; Datei wird überschrieben
+>> file                     Umleitung stdout in Datei; stdout wird an Datei am Ende angehängt
+2> file                     Umleitung stderr in Datei; Datei wird überschrieben
+2> /dev/null                Verwerfen von Fehlermeldungen durch Umleitung nach /dev/null
+1> file1 2> file2           stdout wird in file1 geschrieben, Fehler nach file2
+> file 2>&1                 Umleitung stdout und stderr in Datei; Datei wird überschrieben
+>> file 2>&1                Umleitung stdout und stderr in Datei; Anhängen am Ende von Datei
+
+Achtung von links nach rechts: utility 2>&1 output.log wird in die Konsole geschriben

@@ -1,0 +1,7 @@
+Navigate                    - Ctrl-n / Ctrl-p
+Select                      - Ctrl-y
+Close menu                  - Ctrl-e
+Show documentation          - Ctrl-space
+split screen                - :vsplit / :split
+move to left/right screen   - Ctrl-W h or l
+move window  to left/right  - Ctrl-W H or L

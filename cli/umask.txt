@@ -1,0 +1,13 @@
+# Default rights
+
+# See the umask
+umask 
+
+# new File -> 0666 - 0002 = 0664
+umask 0002
+
+# new directory -> 0777 - 0077 = 0700
+umask 0077
+
+# Default Files: 0666, Default Directories: 0777
+# On my mac is the umask 022. When a folder is created: $ 777 - 22 = 755 $ (read and excecute on gruop and all), when a new file is created: $ 666 - 22 = 644 $ (read and write for the owner, only read for group and root)

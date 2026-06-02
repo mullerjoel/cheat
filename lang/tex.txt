@@ -1,0 +1,13 @@
+# h1 though h6
+\part{...}
+\chapter{...}
+\section{...}
+\subsection{...}
+\subsubsection{...}
+\paragraph{...}
+\subparagraph{...}
+
+# equals
+≤  \leq
+≥  \ge
+≠  \neq

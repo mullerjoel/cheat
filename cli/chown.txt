@@ -1,0 +1,22 @@
+# Change ownership of files
+
+chown Owner:Groupowner file/directory
+
+# recursive
+chown -R Owner:Groupowner file/directory
+
+# When a file is created, the one who created the file is the owner
+# and the group of the file is the default group the owner is in
+
+# Special Rights
+
+# SUID  4
+# temporäre Eigentümerschaft für den Aufrufer | -rwsr-xr-x. (s is special) |
+
+# SGID  2
+# Vererbung der Gruppeneigentümerschaft des Verzeichnisses auf neue Dateien und Verzeichnisse
+# drwxr-sr-x. (s is special)
+
+# Sticky Bit  1 
+# Sticky-Bit an einem Verzeichnis, nur noch Besitzer einer Datei kann diese löschen
+# drwxrwxrwt. (t is special)
