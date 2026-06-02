@@ -1,0 +1,11 @@
+# get environment variable or none
+value = os.getenv("API_KEY")
+
+# get environemtn variable or default value
+os.getenv("API_KEY", "default_key")
+
+# get environment and error
+value = os.environ["API_KEY"]
+
+# set environment variable
+os.environ["DEBUG"] = "True"

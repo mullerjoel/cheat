@@ -1,0 +1,8 @@
+# create virtual environment
+python3 -m venv venv
+# initialize virtual environment
+source venv/bin/activate
+# install dependencies
+python3 -m pip install -r requirements.txt
+# upgrade pip
+python3 -m pip install --upgrade pip
