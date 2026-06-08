@@ -35,6 +35,14 @@ Ctrl-b %
 tmux split-window -v
 Ctrl-b "
 
+# select panes
+Ctrl-b h
+Ctrl-b j
+Ctrl-b k
+Ctrl-b l
+# without keybindings
+Ctrl-b arrwos
+
 # go to copy mode
 Ctrl + b [
 

@@ -1,0 +1,5 @@
+# search the files in my directory
+ctr + t
+
+# search history
+ctr + r
