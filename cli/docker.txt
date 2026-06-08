@@ -20,6 +20,7 @@ docker image rm imagename
 # see docker volumes and remove them
 docker volume ls
 docker volume rm volumename
+docker volume rm $(docker ls -q)
 
 # build everything in docker compose
 docker compose build
@@ -45,3 +46,7 @@ docker stop $(docker ps -aq)
 
 # removes all containers, images, networks, caches, and volumes not currently in use
 docker system prune -a --volumes
+
+# remove docker container
+docker rm imageid
+docker rm $(docker ps -aq)
