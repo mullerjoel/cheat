@@ -63,3 +63,11 @@ hls or hlsearch               - highlight all matching phrases
 
 # Create a vimrc startup script to keep your preferred settings.
 # When typing a : command, press CTRL-D to see possible completions. Press TAB to use one completion.
+
+# Intellij Ideavim
+:vs # vertical split
+:sp # split down
+ctr-w h
+ctr-w j
+ctr-w k
+ctr-w l
