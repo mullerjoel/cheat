@@ -1,0 +1,23 @@
+# show command history
+history
+
+# show last N commands
+history 20
+
+# clear history (current session)
+history -c
+
+# append session history to file
+history -a
+
+# reload history from file
+history -r
+
+# run a command by number
+!42
+
+# run previous command
+!!
+
+# run last command starting with string
+!node

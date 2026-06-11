@@ -1,0 +1,11 @@
+# show current month
+cal
+
+# show a specific month and year
+cal 6 2026
+
+# show a full year
+cal 2026
+
+# start week on monday
+cal -m

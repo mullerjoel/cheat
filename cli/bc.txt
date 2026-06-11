@@ -1,0 +1,24 @@
+# start and quit interactive mode
+bc
+quit
+
+# enable decimals
+bc -l
+
+# set persision inside bc
+scale=4
+
+# oneliners from shell
+echo "3*7" | bc
+echo "scale=3; 10/3" | bc -l
+
+# variables
+x=5
+y=10
+x+y
+
+# math function
+2^8
+s(1)
+l(10)
+sqrt(16)
