@@ -4,7 +4,7 @@ sudo apt install docker
 # create docker compose file
 touch compose.yaml
 
-# see docker images
+# see containers
 docker ps
 
 # see logs of docker container
@@ -15,12 +15,13 @@ docker exec -it <container_name_or_id> bash
 
 # see docker images
 docker image ls
+
+# remove docker image
 docker image rm imagename
 
 # see docker volumes and remove them
 docker volume ls
 docker volume rm volumename
-docker volume rm $(docker ls -q)
 
 # build everything in docker compose
 docker compose build
