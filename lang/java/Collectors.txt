@@ -1,0 +1,14 @@
+Map<String, Integer> map = List.of("Alice", "Bob", "Charlie")
+        .stream()
+        .collect(Collectors.toMap(
+                name -> name,
+                name -> name.length()
+        ));
+
+List<String> sales = List.of("apple", "banana", "apple", "orange", "banana", "apple");
+Map<String, Integer> result = sales.stream()
+        .collect(Collectors.toMap(
+                product -> product,
+                product -> 1,
+                (oldValue, newValue) -> oldValue + newValue
+        ));
