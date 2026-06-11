@@ -1,0 +1,15 @@
+# show current date
+date
+
+# use format specifiers
+date "+%Y-%m-%d"
+date "+%Y-%m-%d %H:%M:%S"
+
+Common formats:
+%Y → year (2026)
+%y → year (26)
+%m → month (01–12)
+%d → day (01–31)
+%H → hour (00–23)
+%M → minutes
+%S → seconds
