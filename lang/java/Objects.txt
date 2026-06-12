@@ -1,0 +1,4 @@
+Objects.requireNonNullElse(name, "default");
+
+// Throws nullpointer exception if null
+Objects.requireNonNull(name);
