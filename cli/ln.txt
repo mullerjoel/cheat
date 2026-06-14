@@ -1,0 +1,10 @@
+# create a hard link
+ln file1.txt link.txt
+
+# create a symbolic (soft) link
+ln -s file1.txt link.txt
+
+# options reference
+-s   # create symbolic link
+-f   # force overwrite existing link
+-v   # verbose output (show created links)

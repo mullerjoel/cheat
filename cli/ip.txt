@@ -1,0 +1,33 @@
+# show status of all network interfaces
+ip link
+
+# show network interfaces and their IP addresses
+ip addr
+
+# show IP addresses and details for interface eth0
+ip addr show dev eth0
+
+# show IP addresses and details for interface enp0s3
+ip addr show dev enp0s3
+
+# show statistics for interface enp0s3
+ip -s link show enp0s3
+
+# show routing table, including default routes and network paths
+ip route
+
+# network interface naming schemes
+en          # ethernet interfaces
+wl          # wireless (Wi-Fi) interfaces
+ww          # mobile broadband (WWAN) interfaces
+
+# naming components
+oN          # onboard device N
+sN          # device in PCI hotplug slot N
+pMsN        # PCI bus M, slot N
+
+# examples
+eno1        # onboard ethernet adapter 1
+ens3        # ethernet adapter in PCI slot 3
+enp0s3      # ethernet adapter on PCI bus 0, slot 3
+wlp4s0      # wireless adapter on PCI bus 4, slot 0

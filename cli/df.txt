@@ -1,0 +1,24 @@
+# show disk usage of all mounted filesystems
+df
+
+# show disk usage in human-readable format
+df -h
+
+# show filesystem type
+df -T
+
+# show usage for a specific filesystem
+df /home
+
+# show inodes usage instead of blocks
+df -i
+
+# include all filesystems (including pseudo filesystems)
+df -a
+
+
+# options reference
+-h   # human-readable sizes (KB, MB, GB)
+-T   # show filesystem type
+-i   # show inode usage
+-a   # include all filesystems

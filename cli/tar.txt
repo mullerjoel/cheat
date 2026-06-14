@@ -1,0 +1,13 @@
+# create a tar archive
+tar -cvf archive.tar file1 file2
+
+# options reference
+-c, --create                 # create new archive
+-x, --extract                # extract files from archive
+-t, --list                   # list contents of archive
+-v, --verbose                # show files being processed
+-f, --file                   # specify archive filename
+-p, --preserve-permissions   # keep original permissions on extract
+-z, --gzip                   # gzip compression (.tar.gz)
+-j, --bzip2                  # bzip2 compression (.tar.bz2)
+-J, --xz                     # xz compression (.tar.xz)

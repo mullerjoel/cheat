@@ -1,0 +1,9 @@
+# display file content
+cat file.txt
+
+# options reference
+-n, --number          # number all lines
+-b, --number-nonblank # number only non-empty lines
+-s, --squeeze-blank   # merge repeated empty lines
+-v                    # show non-printing characters
+-T                    # show tab characters

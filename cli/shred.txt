@@ -1,0 +1,28 @@
+# securely delete a file (overwrite and remove)
+shred file.txt
+
+# remove file after shredding
+shred -u file.txt
+
+# overwrite file 10 times
+shred -n 10 file.txt
+
+# overwrite and then delete file
+shred -n 3 -u file.txt
+
+# show progress while shredding
+shred -v file.txt
+
+# overwrite and force permissions change if needed
+shred -f file.txt
+
+# shred and zero out final pass
+shred -z file.txt
+
+
+# options reference
+-n   # number of overwrite passes
+-u   # remove file after overwriting
+-v   # verbose output
+-f   # force permissions if needed
+-z   # final overwrite with zeros

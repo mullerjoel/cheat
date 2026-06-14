@@ -1,0 +1,10 @@
+# locate binary, source, and man pages
+whereis ls
+whereis grep
+whereis tar
+
+# search only binaries
+whereis -b ls
+
+# search only man pages
+whereis -m ls

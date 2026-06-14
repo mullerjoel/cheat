@@ -1,0 +1,20 @@
+# count lines in a file
+wc -l file.txt
+
+# count words in a file
+wc -w file.txt
+
+# count characters in a file
+wc -m file.txt
+
+# count bytes in a file
+wc -c file.txt
+
+# show lines, words, and bytes at once
+wc file.txt
+
+# options reference
+-l   # count lines
+-w   # count words
+-m   # count characters
+-c   # count bytes

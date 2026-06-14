@@ -1,0 +1,24 @@
+# show memory usage (RAM and swap)
+free
+
+# show memory usage in human-readable format
+free -h
+
+# show memory usage in megabytes
+free -m
+
+# show memory usage in gigabytes
+free -g
+
+# continuous monitoring (refresh every 2 seconds)
+free -s 2
+
+# display total column only (custom view via watch)
+watch free -h
+
+
+# options reference
+-h   # human-readable format
+-m   # show in MB
+-g   # show in GB
+-s   # repeat output every N seconds

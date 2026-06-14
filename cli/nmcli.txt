@@ -1,0 +1,17 @@
+# show status of all network devices
+nmcli dev status
+
+# show detailed information for device eth1
+nmcli dev show eth1
+
+# list all configured network connections
+nmcli con show
+
+# list all active network connections
+nmcli con show-active
+
+# activate connection enp0s4-con
+nmcli con up "enp0s4-con"
+
+# show details of connection "System eth1"
+nmcli con show "System eth1"

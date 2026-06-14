@@ -1,0 +1,8 @@
+# show logged-in users
+who
+
+# show detailed login info
+who -u
+
+# show system boot time
+who -b

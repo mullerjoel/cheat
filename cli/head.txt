@@ -1,0 +1,18 @@
+# show first 10 lines of a file
+head file.txt
+
+# show first 20 lines
+head -n 20 file.txt
+
+# show first 50 bytes
+head -c 50 file.txt
+
+# show first lines of multiple files
+head file1.txt file2.txt
+
+
+# options reference
+-n   # number of lines
+-c   # number of bytes
+-f   # follow file changes (live output)
+-F   # follow with retry if file is recreated

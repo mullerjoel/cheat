@@ -1,0 +1,17 @@
+# trace route to google.com (no root required, simpler than traceroute)
+tracepath google.com
+
+# trace route to an IP address
+tracepath 8.8.8.8
+
+# limit maximum hops (TTL) to 10
+tracepath -m 10 google.com
+
+# set packet size (useful for MTU discovery issues)
+tracepath -b google.com
+
+# trace IPv6 route
+tracepath6 google.com
+
+# show help
+tracepath --help

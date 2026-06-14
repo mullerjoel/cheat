@@ -1,0 +1,26 @@
+# create a new user
+useradd username
+
+# create user with home directory
+useradd -m username
+
+# full example (common real-world setup)
+useradd -m -g student -s /bin/bash -c "Student User" username
+
+# full example with UID, group, home, shell, comment
+useradd -u 1221 -g student -d /home/hslu_student -s /bin/ksh -c "HSLU Student Reto Meyer" reto
+
+
+# options reference
+-m, --create-home        # create home directory
+-g, --gid                # set primary group
+-u, --uid                # set user ID
+-s, --shell              # set login shell
+-c, --comment            # add user description/comment
+-d, --home               # set home directory
+
+
+# special files
+/etc/passwd              # Primary group (Every user is part of one primary group)
+/etc/group               # See additional group
+/etc/sudoers             #  See the rights a user has

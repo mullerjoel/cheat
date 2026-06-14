@@ -1,0 +1,23 @@
+# translate lowercase to uppercase
+echo "hello" | tr 'a-z' 'A-Z'
+
+# translate uppercase to lowercase
+echo "HELLO" | tr 'A-Z' 'a-z'
+
+# delete specific characters (remove vowels)
+echo "hello world" | tr -d 'aeiou'
+
+# squeeze repeated spaces into one
+echo "a    b   c" | tr -s ' '
+
+# replace spaces with newlines
+echo "a b c" | tr ' ' '\n'
+
+# remove all digits
+echo "abc123xyz" | tr -d '0-9'
+
+
+# options reference
+-d   # delete characters
+-s   # squeeze repeated characters
+-c   # complement set (everything except specified chars)

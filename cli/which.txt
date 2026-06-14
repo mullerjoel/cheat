@@ -1,0 +1,7 @@
+# show path of executable
+which ls
+which python
+which gcc
+
+# show all matches in PATH
+which -a python

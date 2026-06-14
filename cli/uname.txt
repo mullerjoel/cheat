@@ -1,0 +1,15 @@
+# show kernel name
+uname
+
+# show all system information
+uname -a
+
+
+
+# options reference
+-a   # all system information
+-r   # kernel release
+-v   # kernel version
+-m   # machine hardware name
+-p   # processor type
+-o   # operating system

@@ -1,11 +1,11 @@
 # First letter
 .       - File
 d       - Directory
-l       - Symbolischer Link |
-b       - Blockorientierte Gratedatei |
-s       - Unix Domainsocket |
-p       - Named pipe Datei |
-c       - Zeichenorientierte Geratedatei |
+l       - Symbolischer Link
+b       - Blockorientierte Gratedatei
+s       - Unix Domainsocket
+p       - Named pipe Datei
+c       - Zeichenorientierte Geratedatei
 
 # read write excecute order
 1. user

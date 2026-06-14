@@ -1,0 +1,13 @@
+# create a new group
+groupadd groupname
+
+# create group with specific GID
+groupadd -g 1001 groupname
+
+# create a system group
+groupadd -r systemgroup
+
+
+# options reference
+-g, --gid        # set group ID
+-r, --system     # create system group

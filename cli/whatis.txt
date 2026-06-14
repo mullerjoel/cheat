@@ -1,0 +1,4 @@
+# brief description of a command
+whatis ls
+whatis grep
+whatis tar

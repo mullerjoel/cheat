@@ -1,0 +1,8 @@
+# print current working directory
+pwd
+
+# show logical path (respects symlinks)
+pwd -L
+
+# show physical path (resolves symlinks)
+pwd -P

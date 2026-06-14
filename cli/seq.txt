@@ -1,0 +1,26 @@
+# print numbers from 1 to 10
+seq 10
+
+# print numbers from 5 to 15
+seq 5 15
+
+# print numbers with step (start end step)
+seq 1 2 10
+
+# generate sequence with custom separator (comma)
+seq -s, 1 10
+
+# format numbers with leading zeros
+seq -w 1 10
+
+# format numbers with custom format
+seq -f "Number %02g" 1 5
+
+# reverse sequence
+seq 10 -1 1
+
+
+# options reference
+-s   # use custom separator
+-w   # equal width padding with leading zeros
+-f   # format output (printf style)

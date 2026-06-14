@@ -1,0 +1,24 @@
+# show last 10 lines of a file
+tail file.txt
+
+# show last 20 lines
+tail -n 20 file.txt
+
+# follow file in real time (logs)
+tail -f file.txt
+
+# follow file with line updates
+tail -F file.txt
+
+# show last 50 bytes
+tail -c 50 file.txt
+
+# show last lines of multiple files
+tail file1.txt file2.txt
+
+
+# options reference
+-n   # number of lines
+-c   # number of bytes
+-f   # follow file changes (live output)
+-F   # follow with retry if file is recreated

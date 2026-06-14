@@ -1,0 +1,20 @@
+# read a line from user input in shell script
+read name
+
+# read with prompt text
+read -p "Enter name: " name
+
+# read without showing input (silent, for passwords)
+read -s password
+
+# read line from file in loop
+while read line; do
+  echo "$line"
+done < file.txt
+
+# options reference
+-p   # prompt text
+-s   # silent input (no echo)
+-t   # timeout in seconds
+-n   # number of characters
+-a   # read into array

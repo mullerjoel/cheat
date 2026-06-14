@@ -1,0 +1,18 @@
+# change login shell
+chsh
+
+# change shell for current user
+chsh -s /bin/bash
+
+# change shell for another user (requires root)
+chsh -s /bin/zsh username
+
+# list available shells
+cat /etc/shells
+
+# verify current shell
+echo $SHELL
+
+# options reference
+-s, --shell     # set login shell
+-l, --list-shells  # show available shells (on some systems)

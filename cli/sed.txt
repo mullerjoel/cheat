@@ -1,0 +1,37 @@
+# replace first occurrence of a word in each line
+sed 's/cat/dog/' file.txt
+
+# replace all occurrences in each line
+sed 's/cat/dog/g' file.txt
+
+# replace in-place (modify file)
+sed -i 's/cat/dog/g' file.txt
+
+# delete lines containing a pattern
+sed '/error/d' file.txt
+
+# print only lines matching a pattern
+sed -n '/error/p' file.txt
+
+# print specific line number
+sed -n '5p' file.txt
+
+# delete a specific line number
+sed '5d' file.txt
+
+# replace text only on lines 2 to 4
+sed '2,4s/cat/dog/g' file.txt
+
+# append text after a matching line
+sed '/error/a\NEW LINE ADDED' file.txt
+
+# insert text before a matching line
+sed '/error/i\INSERTED LINE' file.txt
+
+# options reference
+-s   # substitute (replace text)
+-g   # global replacement in line
+-d   # delete lines
+-n   # suppress automatic printing
+-p   # print lines explicitly
+-i   # edit file in place

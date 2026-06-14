@@ -1,0 +1,28 @@
+# show file type
+file filename
+
+# show file type for multiple files
+file file1 file2 file3
+
+# show mime type only
+file --mime-type filename
+
+# show full mime information
+file --mime filename
+
+# follow symlinks and show target file type
+file -L symlinkname
+
+# do not follow symlinks
+file -h symlinkname
+
+# show file type of all files in a directory
+file *
+
+
+# options reference
+-b             # brief output (no filename)
+-L             # follow symlinks
+-h             # do not follow symlinks
+--mime-type    # show only MIME type
+--mime         # show full MIME info

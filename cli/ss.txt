@@ -1,0 +1,29 @@
+# show all listening TCP and UDP sockets
+ss
+
+# show all sockets (listening and non-listening)
+ss -a
+
+# show all listening sockets with numeric output (no DNS resolution)
+ss -l -n
+
+# show only TCP sockets
+ss -t
+
+# show only UDP sockets
+ss -u
+
+# show listening TCP sockets
+ss -lt
+
+# show listening UDP sockets
+ss -lu
+
+# show process using sockets (requires permissions)
+ss -p
+
+# show extended information (timers, congestion, etc.)
+ss -e
+
+# show summary statistics
+ss -s

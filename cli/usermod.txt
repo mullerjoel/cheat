@@ -1,0 +1,24 @@
+# change user settings
+usermod username
+
+# change home directory
+usermod -d /new/home username
+
+# change primary group
+usermod -g groupname username
+
+# add user to additional groups
+usermod -G group1,group2 username
+
+# add user to groups without removing existing ones
+usermod -aG groupname username
+
+# change user comment/description
+usermod -c "New description" username
+
+# options reference
+-d, --home        # change home directory
+-g, --gid         # set primary group
+-G                # set additional groups
+-a, --append      # add to groups instead of replacing
+-c, --comment     # set user description/comment

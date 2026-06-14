@@ -1,0 +1,29 @@
+# send ICMP echo requests continuously to google.com
+ping google.com
+
+# send ICMP echo requests to a specific IP address
+ping 8.8.8.8
+
+# send exactly 4 ping requests
+ping -c 4 google.com
+
+# send ping requests every 2 seconds
+ping -i 2 google.com
+
+# show only a numeric IP address, do not resolve hostnames
+ping -n 8.8.8.8
+
+# specify packet size in bytes
+ping -s 1000 google.com
+
+# set a timeout of 5 seconds for each reply
+ping -W 5 google.com
+
+# ping an IPv6 address or hostname
+ping6 google.com
+
+# ping using IPv6 (modern alternative)
+ping -6 google.com
+
+# display help
+ping --help

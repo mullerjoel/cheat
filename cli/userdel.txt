@@ -1,0 +1,16 @@
+# delete a user
+userdel username
+
+# delete a user and keep home directory
+userdel username
+
+# delete a user and remove home directory
+userdel -r username
+
+# force delete a user (use with care)
+userdel -f username
+
+
+# options reference
+-r, --remove      # remove home directory and mail spool
+-f, --force       # force removal even if user is logged in
