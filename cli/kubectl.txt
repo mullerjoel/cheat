@@ -1,0 +1,98 @@
+# show kubectl client and cluster version
+kubectl version
+
+# show cluster information
+kubectl cluster-info
+
+# list all nodes in the cluster
+kubectl get nodes
+
+# show detailed information about a node
+kubectl describe node NODE
+
+# list all namespaces
+kubectl get namespaces
+
+# list all pods in the current namespace
+kubectl get pods
+
+# list all pods in all namespaces
+kubectl get pods -A
+
+# show detailed information about a pod
+kubectl describe pod POD
+
+# show logs of a pod
+kubectl logs POD
+
+# follow logs of a pod in real time
+kubectl logs -f POD
+
+# open a shell inside a running pod
+kubectl exec -it POD -- /bin/bash
+
+# list all deployments
+kubectl get deployments
+
+# show detailed information about a deployment
+kubectl describe deployment DEPLOYMENT
+
+# create or update resources from a yaml file
+kubectl apply -f deployment.yaml
+
+# delete resources defined in a yaml file
+kubectl delete -f deployment.yaml
+
+# delete a deployment
+kubectl delete deployment DEPLOYMENT
+
+# restart a deployment
+kubectl rollout restart deployment DEPLOYMENT
+
+# show rollout status of a deployment
+kubectl rollout status deployment DEPLOYMENT
+
+# roll back a deployment to the previous version
+kubectl rollout undo deployment DEPLOYMENT
+
+# list all services
+kubectl get services
+
+# show detailed information about a service
+kubectl describe service SERVICE
+
+# list all configmaps
+kubectl get configmaps
+
+# list all secrets
+kubectl get secrets
+
+# list all events
+kubectl get events
+
+# show resource usage of pods
+kubectl top pods
+
+# show resource usage of nodes
+kubectl top nodes
+
+# switch to another namespace for the current command
+kubectl -n NAMESPACE get pods
+
+# list all resources in the current namespace
+kubectl get all
+
+# list all resources in all namespaces
+kubectl get all -A
+
+# show current kubectl configuration
+kubectl config view
+
+# show current context
+kubectl config current-context
+
+# list available contexts
+kubectl config get-contexts
+
+# switch to another cluster context
+kubectl config use-context CONTEXT

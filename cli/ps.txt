@@ -1,0 +1,23 @@
+# show running processes
+ps
+
+# show processes with parent child relation
+ps f
+
+# show all processes for all users in detailed format (BSD style)
+ps aux
+
+# show all processes in long format with additional scheduling and hierarchy information
+ps lax
+
+# show every process on the system (same as --everyone)
+ps -e
+
+# shows process in full format
+ps -f
+
+# shows ongoing processes and system resources, similar to ps aux but live synchronized
+top
+
+# show process with PID 1054
+ps -p 1054

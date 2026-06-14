@@ -1,0 +1,23 @@
+# Starts the command in the foreground
+<command>
+
+# Starts the command in the background
+<command> &
+
+# Pauses the foreground process and moves it to the background in a stopped state
+CTRL-Z
+
+# Displays a list of processes running in the background
+jobs
+
+# Brings the first background process to the foreground
+fg %1
+
+# Brings the most recent background process back to the foreground
+fg
+
+# Resumes a stopped background process (referenced by job number) and continues running it in the background
+bg %1
+
+# Resumes the most recent process stopped with `CTRL-Z` and runs it in the background
+bg 

@@ -1,0 +1,37 @@
+# show all available signals
+kill -l
+
+# kill the process with the pid 5152
+kill 5152
+
+# force kill the process with the pid 5152 immediately
+kill -9 5152
+
+# send the SIGTERM signal to the process with the pid 5152
+kill -SIGTERM 5152
+
+# kill all processes with the name control
+killall control
+
+# kill all processes matching control in the process name
+pkill control
+
+# kill all processes owned by the user
+pkill -U user
+
+# halt a process (cannot be caught or ignored)
+SIGSTOP (19)
+# suspend a process from the terminal (CTRL-Z)
+SIGTSTP (20)
+# continue a previously halted process
+SIGCONT (18)
+# interrupt a process from the terminal (CTRL-C)
+SIGINT (2)
+# quit a process and create a core dump (CTRL-\)
+SIGQUIT (3)
+# request a graceful termination of a process
+SIGTERM (15)
+# immediately terminate a process (cannot be caught or ignored)
+SIGKILL (9)
+# signal that the terminal/session was closed
+SIGHUP (1)

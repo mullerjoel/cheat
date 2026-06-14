@@ -1,0 +1,43 @@
+# list all active service units
+systemctl list-units --type=service
+systemctl list-units --type=service --all
+systemctl list-units --type=service --all --failed
+
+# list installed service unit files
+systemctl list-unit-files --type=service
+
+# show detailed status information for a service
+systemctl status sshd.service
+systemctl is-active sshd.service
+systemctl is-enabled sshd.service
+systemctl is-failed sshd.service
+
+# start, stop restrt, reload eneble at restart disable at restart a service
+systemctl start UNIT
+systemctl stop UNIT
+systemctl restart UNIT
+systemctl reload UNIT
+systemctl enable UNIT
+systemctl disable UNIT
+
+# prevent a service from being started manually or automatically
+systemctl mask UNIT
+systemctl unmask UNIT
+
+# show dependencies required by a unit
+systemctl list-dependencies UNIT
+
+# Different types
+.service    # system service or daemon
+.target     # group of units used to reach a specific system state
+.automount  # automatic mount point
+.mount      # file system mount point
+.device     # device managed by the kernel
+.socket     # socket used for inter-process communication
+.timer      # scheduled task similar to a cron job
+.path       # one-time task or script
+.path       # monitors files or directories and triggers a unit on changes
+.swap       # swap partition or swap file
+.automount  # network resource mount
+.scope      # process group managed by systemd
+.slice      # environment or resource grouping for processes
