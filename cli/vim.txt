@@ -6,34 +6,10 @@ https://vim.rtorr.com
 :s/old/new                     - Replace first match on line.
 :s/old/new/g                   - Replace all matches on line.
 :#,#s/old/new/g                - Replace matches between two lines with the number #
-
 Good Cheatsheet: https://vim.rtorr.com
 
-# basic vim commands
-h, j, k, l                     - Move cursor: left, down, up, right (alternatively, use arrow keys).
-vim FILENAME                   - Start Vim with the specified file.
-:q!, :wq                       - Quit without saving; Save and quit.
-x                              - Delete character at the cursor.
-i, a, A                        - Insert before cursor; Insert after cursor; Append at line end.
-ESC                            - Enter Normal mode or cancel a command.
-dw, de, d$, dd, dG             - Delete to next word; Delete to word end; Delete to line end; Delete line, delete content of file
-number motion                  - Repeat a motion (e.g., 2w to move two words forward).
-d [number] motion              - Delete with operator and motion.
-0, G, gg, number G, CTRL-G     - Move to start of line; End of file; Start of file, specific row, see row you are in 
-u, U, CTRL-R                   - Undo last change; Undo all on line; Redo undo.
-p                              - Paste deleted text after cursor.
-r char, R                      - Replace character; Enter Replace mode.
-ce, c$                         - Change to word end; Change to line end.
-/phrase, ?phrase               - Search forward; Search backward.
-n, N, CTRL-O, CTRL-I           - Next match (same direction); Opposite direction, newer position, older position 
-%                              - Jump to matching parenthesis/bracket/brace.
-o, O                           - Open new line below/above cursor.
-e                              - Move to word end.
-y, p                           - Yank (copy) text; Paste text.
-t, f                           - search for a letter and jump to that, right before that, jump with ; to the next and with , back
--, +                           - go up/down and start at the beginning/end
-=                              - indent the current line
-
+# register
+"_d        # delete something and copy to clipboard
 
 # outside actions
 :!command                      - Execute external command.
@@ -41,33 +17,12 @@ t, f                           - search for a letter and jump to that, right bef
 v motion :w FILENAME           - Save visually selected lines to file.
 :r FILENAME                    - Insert file contents below cursor.
 :r !command                    - Insert output of external command below cursor.
-:set [no]option                - Enable/disable option (e.g., ignorecase, hlsearch).
-:help cmd, CTRL-W              - Help for command; Switch windows.
-CTRL-D, TAB                    - Command completion suggestions; Use completion.
-:e <file>                      - Neue Datei öffnen
-:colorscheme <tab>             - Farbschema wechseln
-:tabedit <tab>                 - Reiter/Tabs öffnen
-STRG + n                       - Automatische Vervollständigung
-:Vexplore                      - Dateibaum öffnen
-:set spell spelllang=en        - Rechtschreibprüfung
-:undo                          - Sachen wirder ruckgangig machen 
-:redo                          - Ruckgangig gemachte sachen wieder undo machen 
-CTR-W                          - To Jump to another window 
-
-
-# Typing :set xxx sets the option xxx.  Some options are: (You can either use the long or the short option name)
-ic or ignorecase              - ignore upper/lower case when searching
-is or incsearch               - show partial matches for a search phrase
-hls or hlsearch               - highlight all matching phrases
-# Prepend "no" to switch an option off: :set noic
-
-# Create a vimrc startup script to keep your preferred settings.
-# When typing a : command, press CTRL-D to see possible completions. Press TAB to use one completion.
 
 # Intellij Ideavim
-:vs # vertical split
-:sp # split down
-ctr-w h
-ctr-w j
-ctr-w k
-ctr-w l
+:actionlist          # see a list with all actions
+:vs                  # vertical split
+:sp                  # split down
+ctr-w h              # go left window
+ctr-w j              # go lower window
+ctr-w k              # go upper window
+ctr-w l              # go right window
