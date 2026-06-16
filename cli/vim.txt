@@ -11,6 +11,11 @@ Good Cheatsheet: https://vim.rtorr.com
 # register
 "_d        # delete something and copy to clipboard
 
+# Upper case and lower case
+gUl                             # make text upper case under corsor
+gul                             # make text lower case under cursor
+~                               # toggle case
+
 # outside actions
 :!command                      - Execute external command.
 :w FILENAME                    - Save file with new name.
