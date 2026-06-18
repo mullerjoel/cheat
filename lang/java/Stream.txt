@@ -1,0 +1,12 @@
+map.entrySet()
+   .stream()
+   .forEach(entry ->
+       System.out.println(entry.getKey() + ": " + entry.getValue()));
+
+map.keySet()
+   .stream()
+   .forEach(System.out::println);
+
+map.values()
+   .stream()
+   .forEach(System.out::println);
