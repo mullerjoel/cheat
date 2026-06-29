@@ -1,0 +1,15 @@
+# show current kubectl configuration
+kubectl config view
+
+# show current context
+kubectl config current-context
+
+# list available contexts or clusters
+kubectl config get-contexts
+kubectl config get-clusters
+
+# switch to another cluster context
+kubectl config use-context CONTEXT
+
+# set a namespace to the actual config
+kubectl config set-context --current --namespace=my-app

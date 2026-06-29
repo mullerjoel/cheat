@@ -1,0 +1,5 @@
+# show resource usage of pods
+kubectl top pods
+
+# show resource usage of nodes
+kubectl top nodes

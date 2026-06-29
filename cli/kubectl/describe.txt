@@ -1,0 +1,11 @@
+# show detailed information about a node
+kubectl describe node NODE
+
+# show detailed information about a pod
+kubectl describe pod POD
+
+# show detailed information about a service
+kubectl describe service SERVICE
+
+# show detailed information about a deployment
+kubectl describe deployment DEPLOYMENT

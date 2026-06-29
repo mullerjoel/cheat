@@ -1,0 +1,2 @@
+# create or update resources from a yaml file
+kubectl apply -f deployment.yaml

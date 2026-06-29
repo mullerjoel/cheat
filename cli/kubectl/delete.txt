@@ -1,0 +1,5 @@
+# delete resources defined in a yaml file
+kubectl delete -f deployment.yaml
+
+# delete a deployment
+kubectl delete deployment DEPLOYMENT

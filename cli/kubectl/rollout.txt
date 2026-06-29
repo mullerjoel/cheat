@@ -1,0 +1,8 @@
+# restart a deployment
+kubectl rollout restart deployment DEPLOYMENT
+
+# show rollout status of a deployment
+kubectl rollout status deployment DEPLOYMENT
+
+# roll back a deployment to the previous version
+kubectl rollout undo deployment DEPLOYMENT
