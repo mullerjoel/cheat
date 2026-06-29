@@ -1,0 +1,14 @@
+# add and select the Docker provider
+devpod provider add docker
+devpod provider use docker
+
+# create/start a workspace from the current directory
+devpod up .
+devpod up . --ide none
+
+# list all workspaces
+devpod list
+
+# stop and delete a workspace
+devpod stop backend
+devpod delete backend
