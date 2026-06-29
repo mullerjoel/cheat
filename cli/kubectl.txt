@@ -7,6 +7,9 @@ kubectl cluster-info
 # list all nodes in the cluster
 kubectl get nodes
 
+# list all services
+kubectl get svc
+
 # show detailed information about a node
 kubectl describe node NODE
 
@@ -30,6 +33,7 @@ kubectl logs -f POD
 
 # open a shell inside a running pod
 kubectl exec -it POD -- /bin/bash
+kubectl exec --stdin --tty POD -- /bin/bash
 
 # list all deployments
 kubectl get deployments
@@ -94,5 +98,11 @@ kubectl config current-context
 # list available contexts
 kubectl config get-contexts
 
+# list all clusters
+kubectl config get-clusters
+
 # switch to another cluster context
 kubectl config use-context CONTEXT
+
+# set a namespace to the actual config
+kubectl config set-context --current --namespace=my-app
