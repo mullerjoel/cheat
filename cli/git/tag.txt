@@ -6,6 +6,9 @@ git tag v1.0.0
 git push origin v1.0.0
 git push origin --tags
 
+# remove origin tag
+git push origin --delete <tagname>
+
 # to create a tag on the current commit:
 git tag -a "tag name" -m "tag message"
 git tag -a v3.10.2 -m "Fixed a lil bug"

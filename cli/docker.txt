@@ -42,6 +42,9 @@ docker compose down --rmi all
 # port mapping
 docker run -p <host_port>:<container_port> image_name
 
+# run container which stops immidiately
+docker run -it --entrypoint /bin/bash <image>
+
 # stop and kill all docker container
 docker stop $(docker ps -aq)
 
