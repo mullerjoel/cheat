@@ -1,0 +1,46 @@
+# print entire file
+awk '{print}' file.txt
+
+# print first column
+awk '{print $1}' file.txt
+
+# print lines matching a pattern
+awk '/error/' file.txt
+
+# print lines where first column matches
+awk '$1 == "Alice"' file.txt
+
+# print specific columns
+awk '{print $1, $3}' file.txt
+
+# count lines
+awk 'END {print NR}' file.txt
+
+# sum a column
+awk '{sum += $2} END {print sum}' file.txt
+
+# print lines with more than N fields
+awk 'NF > 3' file.txt
+
+# print line numbers
+awk '{print NR, $0}' file.txt
+
+# options reference
+-F X        # set field separator
+-v var=val  # assign variable before execution
+-f file     # read awk program from file
+-e program  # provide awk program directly
+
+# built-in variables
+$0           # entire line
+$1, $2...    # fields (columns)
+NR           # current line number
+NF           # number of fields in current line
+FS           # input field separator
+OFS          # output field separator
+RS           # input record separator
+ORS          # output record separator
+FILENAME     # current filename
+ARGC         # number of command-line arguments
+ARGV         # command-line arguments array
+ENVIRON      # environment variables

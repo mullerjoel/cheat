@@ -1,0 +1,15 @@
+# remove adjacent duplicate lines
+uniq file.txt
+
+# remove duplicates from unsorted input
+sort file.txt | uniq
+sort file.txt | uniq -c
+
+# options reference
+-c   # prefix lines by occurrence count
+-d   # print only duplicate lines
+-u   # print only unique lines
+-i   # ignore case
+-f N # skip first N fields
+-s N # skip first N characters
+-w N # compare only first N characters

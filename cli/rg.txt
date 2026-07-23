@@ -1,0 +1,17 @@
+# search for a pattern, in a file or in a dir
+rg "error"
+rg "error" file.txt
+rg "error" ./src
+
+# use regular expressions
+rg "^ERROR.*failed"
+
+# options reference
+-i         # ignore case
+-w         # match whole words
+-n         # show line numbers
+-l         # print matching file names
+-c         # count matches per file
+--hidden   # search hidden files
+-u         # reduce filtering
+-uu        # search all files
