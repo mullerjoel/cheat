@@ -5,10 +5,11 @@ brew install pandoc
 pandoc file1.md file2.md file3.md -o merged.md
 
 # Make table of content
-pandoc --toc -s example.md -o example_with_toc.md
+pandoc example.md -o example_with_toc.md --toc
 
 # Markdown to PDF
-pandoc example.md --pdf-engine=tectonic -o example.pdf
+pandoc example.md -o example.pdf --pdf-engine=tectonic
+pandoc example.md -o example.pdf --pdf-engine=typst
 
 # Or define a yaml file for more adjustments on the top on the md file (begin and start with ---)
 title: "Homebrew formulas"
