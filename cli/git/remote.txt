@@ -8,3 +8,8 @@ git remote -v
 
 # change remote
 git remote set-url origin git@github.com:joel-muller/pdate.git
+
+# add mulitple remotes
+git remote add origin ssh://git@codeberg.org/mullerjoel/config.git
+git remote set-url --add --push origin ssh://git@codeberg.org/mullerjoel/config.git
+git remote set-url --add --push origin git@github.com:mullerjoel/config.git
