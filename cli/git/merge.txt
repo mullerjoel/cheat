@@ -10,7 +10,6 @@ Fast forward merge, when having, following, and merging vscode into main, it jus
 A - B       main
 
 
-# Resolve conflicts with checkout
-# when you know you have conflicts and want to merge, just try to merge main into the future branch. and try to resolve conflicts in the future branch with opening an editor and do it manually. Then go back to the main branch and merge the future branch. You can also stay in the main branch and merge the future branch and resolve it with checkout
-git checkout --theirs path/to/file
-git checkout --ours path/to/file
+# Resolve conflicts with checkout, assume you are in feat and do git rebase main
+git checkout --theirs path/to/file # feature branch   replayed commit (feat)
+git checkout --ours path/to/file   # main branch      base (main)

@@ -15,6 +15,10 @@ vim <file>
 git add .
 git rebase --continue
 
+# rebase and always acept main branch
+git rebase --strategy-option=ours main
+git rebase -X ours main
+
 # Squashing (n is the number of commits i want to squash)
 git rebase -i HEAD~n
 git rebase -i --root
