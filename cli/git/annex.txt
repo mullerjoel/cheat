@@ -6,6 +6,11 @@ git annex sync --cleanup
 git annex initremote drive type=rclone encryption=none rcloneremotename=drive
 git annex initremote drive type=rclone encryption=shared rcloneremotename=drive
 
+# add s3 bucket blackblaze (https://git-annex.branchable.com/tips/using_Backblaze_B2/)
+git annex initremote b2-0 type=S3 signature=v4 host=s3.us-east-005.backblazeb2.com bucket=git-annex-files protocol=https encryption=shared
+export AWS_ACCESS_KEY_ID=
+export AWS_SECRET_ACCESS_KEY=
+
 # setup special remote on every other device after initremote
 git annex enableremote drive
 
