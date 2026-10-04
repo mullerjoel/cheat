@@ -1,6 +1,10 @@
 # create a tar archive
 tar -cvf archive.tar file1 file2
 
+# a good archive
+tar -cf files.tar files
+tar -xpf files.tar files
+
 # options reference
 -c, --create                 # create new archive
 -x, --extract                # extract files from archive
