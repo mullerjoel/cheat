@@ -1,0 +1,3 @@
+sudo apt install cifs-utils
+sudo mkdir -p /mnt/nas
+sudo mount -t cifs //192.168.0.110/homelab /mnt/nas -o username=mac,uid=$(id -u),gid=$(id -g),vers=3.0
