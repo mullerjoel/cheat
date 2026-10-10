@@ -15,3 +15,5 @@ ssh_config              - Config file für den SSH Dienst
 # StrictHostKeyChecking kann auf Yes gestellt werden. Wird abgebrochen wenn keys nicht mehr übereinstimmen
 # Password-Atheitication kann auf no gestellt werden um keine Passwörter mehr zuzulassen
 # Nach einer anderung muss sudo systemctl restart sshd gemacht werden, damit es der service neu gestartet wird
+
+# see ssh config here: https://man.openbsd.org/ssh_config.5
